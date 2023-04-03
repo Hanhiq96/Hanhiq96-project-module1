@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="form signup">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <i class="fa-solid fa-user"></i>
+                <span>username</span>
+                <input type="text" id="name" required="required">
+            </div>
+            <div class="inputBox">
+                <i class="fa-solid fa-envelope"></i>
+                <span>email address</span>
+                <input type="text" id="email" required="required">
+            </div>
+            <div class="inputBox">
+                <i class="fa-solid fa-lock"></i>
+                <span>create password</span>
+                <input type="password" id="password" required="required">
+            </div>
+            <div class="inputBox">
+                <i class="fa-solid fa-lock"></i>
+                <span>confirm password</span>
+                <input type="password" id="confirmpassword" required="required">
+            </div>
+            <div>
+                <button onclick="addAccount()">Create Account</button>
+            </div>
+            <div id="error" style="display: none;">Thong tin khong chinh xac</div>
+            <div>
+                <p>Already a member ? <a href="../html/Login.html" class="login">Login</a></p>
+            </div>
+
+        </div>
+
+      <div id="message" style="display: none;">tài khoản đã được đăng kí</div>
+      <div id="message2" style="display: none;">Đăng kí thành công</div>
+
+       
+    </div>
+<script src="../js/signup.js"></script>
+
+</body>
+
+</html>

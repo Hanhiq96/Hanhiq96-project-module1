@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ h2{
+  text-align: center;
+  background-color:rgba(83, 93, 84, 0.714);
+  color: rgb(215, 232, 235);
+  padding: 20px; 
+}
+
+.product{
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid;
+  border-collapse: separate;
+  border-spacing: 10px;
+
+  
+}
+table, th, td {  
+  border: 1px solid rgb(209, 116, 217);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.product .product-image {
+  text-align: center;
+}
+
+ .product-name {
+  text-align: center;
+}
+
+.product-price {
+  text-align: center;
+}
+
+.product-quantity{
+  text-align: center;
+}
+
+.product-delete{
+  text-align: center;
+}
+
+.product button {
+  border-radius: 5px;
+  background-color: hsl(181, 46%, 55%);
+  color: rgb(35, 15, 15);
+}
+.material-symbols-outlined{
+  position: relative;
+  margin-top: 5px;
+}

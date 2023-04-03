@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logn in</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form onsubmit="signInUser(event)">
+            <h2>Login</h2>
+            <div class="inputBox">
+                <input type="text" id="userSignIn" required="required">
+                <span>User</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Pass</span>
+                <i></i>
+            </div>
+            <button type="submit">Login</button>
+            <div>
+                <p>Create Account ? <a href="../html/signup.html">Signup</a> </p>
+            </div>
+        </form>
+    </div>
+    <script>
+       function name(event){
+            event.preventDefault();
+            let username = document.getElementById("user").value;
+            let password = document.getElementById("pass").value;
+            let saveLocal = JSON.parse(localStorage.getItem("saveUp")) || [];
+            let user = saveLocal.find((user) => user.username === username && user.passwordUp === password);
+            if(user){
+                window.location.href="Home.html"
+            } else {
+                document.getElementById("error").style.display= "block";
+
+            }
+        }
+    </script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

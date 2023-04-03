@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Add product image</label><br>
+        <input type="file" onchange="imgProduct(this)"> <br>
+        <label for="">ID</label><br>
+        <input id="soluong" type="number"><br>
+        <img id="productImage" src="" alt="Product image"><br>
+        <label for="">Product name</label> <br>
+        <input id="name" type="text"> <br> <br>
+        <label for="price">Price</label> <br>
+        <input id="price" type="text"> <br> <br>
+        <button id="update" onclick="addProduct()">Add</button>
+      </div>
+    <table id="table" border="1px"></table>
+
+   <script src="../js/quanLiSanPham.js"></script>
+        
